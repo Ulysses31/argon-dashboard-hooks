@@ -1,0 +1,3 @@
+/src/assets/**/*.js
+/src/build/**/*.js
+/src/public/**/*.js

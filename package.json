@@ -1,0 +1,75 @@
+{
+  "name": "argon-dashboard-components-test",
+  "version": "1.0.0",
+  "description": "React version of Argon Dashboard",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ulysses31/argon-dashboard-hooks"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "argon",
+    "argon-react",
+    "dashboard",
+    "dashboard-react",
+    "argon-dashboard",
+    "argon-dashboard-react"
+  ],
+  "author": "Iordanidis Chris",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rd /S node_modules && del package-lock.json && npm install && npm start",
+    "lint": "eslint ./src/**/*.js --ext .js --config .eslintrc.json --ignore-path .eslintignore",
+    "lintfix": "eslint ./src/**/*.js --ext .js --config .eslintrc.json --fix --ignore-path .eslintignore",
+    "compile-sass": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.css",
+    "minify-sass": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.css --source-map true"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.4",
+    "classnames": "^2.2.6",
+    "moment": "^2.29.1",
+    "node-sass": "^5.0.0",
+    "nouislider": "^14.6.3",
+    "react": "^17.0.1",
+    "react-chartjs-2": "^2.11.1",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-datetime": "^3.0.4",
+    "react-dom": "^17.0.1",
+    "react-google-maps": "^9.4.5",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.2",
+    "reactstrap": "^8.9.0"
+  },
+  "devDependencies": {
+    "@types/googlemaps": "^3.43.3",
+    "@types/markerclustererplus": "^2.1.33",
+    "@types/react": "^17.0.2",
+    "typescript": "^4.1.5",
+    "eslint": "^7.15.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-webpack-plugin": "^2.4.1",
+    "prettier": "^2.2.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
